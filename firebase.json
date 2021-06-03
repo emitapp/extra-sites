@@ -1,19 +1,40 @@
 {
-  "hosting": {
-    "public": "hosting/build",
-    "predeploy": [
-      "cd hosting && npm run build && cd .."
-    ],
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
-  }
+  "hosting": [
+    {
+      "target": "download",
+      "public": "download-site/build",
+      "predeploy": [
+        "cd download-site && npm run build && cd .."
+      ],
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "target": "washer",
+      "public": "washer-site/build",
+      "predeploy": [
+        "cd washer-site && npm run build && cd .."
+      ],
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
 }

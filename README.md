@@ -6,3 +6,10 @@ So ideally these little sites should've been part of the main emit server repo, 
 https://github.com/firebase/firebase-tools/issues/590
 
 So for now they'll be here.
+
+
+download-site: site that redirects to the stores
+
+washer-site: site that cleans Mailchimp template HTML for use by our Sendy instance. Not indexed by google.
+
+`firebase deploy --only hosting:TARGET_NAME	`

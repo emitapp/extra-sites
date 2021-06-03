@@ -1,5 +1,17 @@
 {
   "projects": {
     "default": "emit-download-redirect"
+  },
+  "targets": {
+    "emit-download-redirect": {
+      "hosting": {
+        "washer": [
+          "emit-mail-washer"
+        ],
+        "download": [
+          "emit-download-redirect"
+        ]
+      }
+    }
   }
 }

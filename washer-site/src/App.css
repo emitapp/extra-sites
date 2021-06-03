@@ -29,22 +29,26 @@
   align-items: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  height: 50px;
 }
 
-.button {
+button {
   color: #f87721 !important;
   text-transform: uppercase;
   text-decoration: none;
   background: #ffffff;
-  padding: 8px;
+  padding: 8px 100px;
   border: 4px solid #f87721 !important;
   display: inline-block;
   border-radius: 8px;
   transition: all 0.4s ease 0s;
   font-weight: bold;
+  width: fit-content;
+  align-self: center;
+
 }
 
-.button:hover {
+button:hover {
   color: #ffffff !important;
   background: #f6b93b;
   border-color: #f6b93b !important;
@@ -61,4 +65,8 @@
   font-weight: bold;
   width: 30%;
   text-align: center;
+}
+
+.new-line {
+  white-space: pre-line;
 }
