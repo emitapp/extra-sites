@@ -10,6 +10,9 @@
         ],
         "download": [
           "emit-download-redirect"
+        ],
+        "accounts": [
+          "emit-account-mgmt"
         ]
       }
     }

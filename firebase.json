@@ -35,6 +35,24 @@
           "destination": "/index.html"
         }
       ]
+    },
+    {
+      "target": "accounts",
+      "public": "accounts-site/build",
+      "predeploy": [
+        "cd accounts-site && npm run build && cd .."
+      ],
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
     }
   ]
 }

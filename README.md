@@ -12,4 +12,6 @@ download-site: site that redirects to the stores
 
 washer-site: site that cleans Mailchimp template HTML for use by our Sendy instance. Not indexed by google.
 
+accounts-site: Used to manage things like user email verification. Not indexed by google.
+
 `firebase deploy --only hosting:TARGET_NAME	`
