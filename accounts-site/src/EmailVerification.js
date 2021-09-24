@@ -69,7 +69,14 @@ class App extends Component {
             justifyContent: "center", display: "flex", flexDirection: "column",
           }}>
 
-            {this.getMainUI()}
+            <div style={{
+              margin: 8,
+              justifyContent: "center", display: "flex",
+              flexDirection: "column", alignItems: "center"
+            }}>
+              {this.getMainUI()}
+
+            </div>
 
           </div>
         </div>
@@ -77,8 +84,8 @@ class App extends Component {
 
         <footer className="footer">
           <p style={{ alignSelf: "flex-end", color: "lightgray", fontSize: 12, marginRight: 8 }}>
-            Animations by 
-            <a href="https://lottiefiles.com/38064-error-cone">Fernando</a>, 
+            Animations by
+            <a href="https://lottiefiles.com/38064-error-cone">Fernando</a>,
             <a href="https://lottiefiles.com/796-check-mark">Ryan</a>,
             <a href="https://lottiefiles.com/75839-jump-through-4-hoops">andru</a>
           </p>
@@ -113,13 +120,16 @@ class App extends Component {
   }
 
   renderErrorUI = () => {
+    const defaultErrorMessage = `Either you are already verified ` +
+      `(this link only shows "success" the first time its opened), or this request is invalid.`
     return (
       <>
         <ErrorAnimation />
         <p className={"statusTitle"}>
           Something went wrong!
         </p>
-        <p>{this.state.errorMessage}</p>
+        {/* For some reason in rare cases errorMessage has no value. Not worth deep investigation. */}
+        <p>{this.state.errorMessage || defaultErrorMessage}</p>
       </>
     )
   }
