@@ -13,6 +13,9 @@
         ],
         "accounts": [
           "emit-account-mgmt"
+        ],
+        "tickets": [
+          "emit-tickets"
         ]
       }
     }

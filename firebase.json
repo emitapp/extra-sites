@@ -53,6 +53,24 @@
           "destination": "/index.html"
         }
       ]
+    },
+    {
+      "target": "tickets",
+      "public": "tickets/build",
+      "predeploy": [
+        "cd tickets && npm run build && cd .."
+      ],
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
     }
   ]
 }
