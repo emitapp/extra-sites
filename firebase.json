@@ -71,6 +71,24 @@
           "destination": "/index.html"
         }
       ]
+    },
+    {
+      "target": "main",
+      "public": "main/build",
+      "predeploy": [
+        "cd main && npm run build && cd .."
+      ],
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
     }
   ]
 }

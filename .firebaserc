@@ -16,6 +16,9 @@
         ],
         "tickets": [
           "emit-tickets"
+        ],
+        "main": [
+          "emit-main"
         ]
       }
     }

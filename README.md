@@ -7,11 +7,16 @@ https://github.com/firebase/firebase-tools/issues/590
 
 So for now they'll be here.
 
+main: The main website for Emit.
 
-download-site: site that redirects to the stores
+download-site: Site that redirects to the stores
 
-washer-site: site that cleans Mailchimp template HTML for use by our Sendy instance. Not indexed by google.
+washer-site: Site that cleans Mailchimp template HTML for use by our Sendy instance. Not indexed by google.
 
 accounts-site: Used to manage things like user email verification. Not indexed by google.
 
+tickets: Experimental site where Emit was going to be a place to get last-minute tickets.
+
 `firebase deploy --only hosting:TARGET_NAME	`
+
+Btw, all the sites were made in a hurry so don't expect good code.
