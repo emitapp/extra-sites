@@ -97,16 +97,13 @@ class App extends Component {
 
               <p className={"normal-text"} style={{ width: "80%" }}>
 
-                🚧Working on post-mortems!🚧
-                {/* <strong>
+                <strong>
                   Why we failed
                 </strong>
                 <br />
-                <a href=""> Anderson's Take </a> 
-                *** 
-                <a href=""> Brandon's Take </a> */}
+                <a href="https://www.loadingdeveloper.com/emit-story/"> Anderson's Take: Our Story </a> <br/>
+                <a href="https://www.loadingdeveloper.com/emit-lessons/"> Anderson's Take: Our Lessons </a> 
               </p>
-
               <p className={"normal-text"} style={{ width: "80%" }}>
                 <a href={"https://forms.gle/qyBSAJ93giwjGnp17"}>
                   Want to get contacted when we make something new?
