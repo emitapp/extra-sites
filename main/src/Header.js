@@ -28,7 +28,7 @@ class Header extends PureComponent {
                     flexDirection: "row-reverse",
                     flex: 1,
                 }}>
-                    <a href={"https://www.instagram.com/getemit_/"}
+                    <a href={"https://twitter.com/getemit_"}
                         style={{ color: "inherit", textDecoration: "inherit" }}
                         rel="noreferrer">
                         <img
